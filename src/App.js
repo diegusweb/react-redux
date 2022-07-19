@@ -4,6 +4,7 @@ import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Users from './components/Users';
+import PostsList from './components/PostsList'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='create-task' element={<TaskForm />}/>
           <Route path='edit-task/:id' element={<TaskForm />}/>
           <Route path='users' element={<Users />}/>
+          <Route path='/posts' element={<PostsList />} />
         </Routes>
       </BrowserRouter>
     </div>
